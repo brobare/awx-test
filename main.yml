@@ -5,4 +5,4 @@
   tasks:
     - name: testing things
       debug:
-        msg: "stuff and things"
+        msg: "{{ lookup('pipe', 'hostname') }}"
