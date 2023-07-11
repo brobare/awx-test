@@ -4,5 +4,5 @@
 
   tasks:
     - name: testing things
-      debug:
-        msg: "{{ lookup('pipe', 'ifconfig') }}"
+      uri:
+        url: "https://ifconfig.co/json"
